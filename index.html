@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Collaboration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body style="background-image: url('background.png'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <header>
+        <h1>Live Code Collaboration</h1>
+        <nav>
+            <button id="loginBtn">Login</button>
+            <button id="signupBtn">Sign Up</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="code-editor">
+            <h2>Code Editor</h2>
+            <textarea id="editor" placeholder="Write your code here..."></textarea>
+        </section>
+
+        <section id="chat">
+            <h2>Chat Support</h2>
+            <div id="chat-window">
+                <div id="messages"></div>
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="sendBtn">Send</button>
+            </div>
+        </section>
+
+        <section id="video-conference">
+            <h2>Video Conferencing</h2>
+            <div id="video-container">
+                <video id="localVideo" autoplay muted></video>
+                <div id="remoteVideos"></div>
+            </div>
+            <button id="startCallBtn">Start Call</button>
+            <button id="endCallBtn">End Call</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Live Code Collaboration. All rights reserved.</p>
+    </footer>
+    <script src="script.js" ></script>
+</body>
+</html>
